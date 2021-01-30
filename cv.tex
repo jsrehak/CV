@@ -11,11 +11,10 @@
     urlcolor=cyan,
   }
 \newcommand{\Cpp}[1][]{\textrm{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bfseries++}#1}}
-\urlstyle{same}
+\urlstyle{tt}
 \usepackage{xspace}
 %\textheight=10.75in
 \newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
-
 %______________________________________________________________________________________________________________________
 \begin{document}
 \name{\Large Joshua S. Rehak}
@@ -23,7 +22,7 @@
     % Contact Information
   \section{\mysidestyle Contact\\Information}
   phone: (401) 573-7417 $\cdot$ email: \verb`jsrehak@gmail.com`
-  $\cdot$ github: \verb`github.com/jsrehak`\hfill \\
+  $\cdot$ github: \url{https://github.com/jsrehak}\hfill \\
 
     %__________________________________________________________________________________________________________________
     %Resume Objective
@@ -70,7 +69,7 @@
     \textbf{University of California, Berkeley}, Berkeley, CA\\
                 \textsl{Graduate Student Researcher} \hfill
                 \textbf{Fall 2015 -- Present}\\
-                \textsl{Advisor: Professor Rachel N. Slaybaugh} -- \verb`rnslaybaugh@berkeley.edu`
+                \textsl{Advisor: Professor Rachel N. Slaybaugh} -- \verb`slaybaugh@berkeley.edu`
                 \begin{list2}
                 \item[]                 Developing a novel finite-element-based code for the implementation and
                 assessment of acceleration methods for deterministic
@@ -90,13 +89,17 @@
                 Engineering applications.
                 \end{list2}
     \textbf{United States Navy} \\
-    \textsl{Submarine Officer -- Honorably discharged as a Lieutenant (O-3)} \hfill \textbf{2008 -- Fall 2015}
+    \textsl{Submarine Officer -- Honorably discharged as a lieutenant (O-3)} \hfill \textbf{2008 -- Fall 2015}
     \\\vspace{-3mm}
     \begin{list2}
-    \item Coordinated international submarine operations for the Rim of the Pacific 2014 naval exercise.
-    \item Qualified Officer of the Deck on Los Angeles class submarines.
+    \item Coordinated submarine operations and international
+      participation for the Rim of the Pacific 2014 naval exercise
+      involving 23 nations, 46 ships and six submarines.
+    \item Supported two six-month deployments while qualified Officer
+      of the Deck and Engineering Officer of the Watch on Los Angeles class submarines.
     \item Certified for assignment as Engineer Officer in charge of a Naval Nuclear Propulsion Plant.
     \item Led divisions responsible for the maintenance and operation of reactor plant instrumentation, radiological controls, and water chemical analysis.
+      \item TS/SCI security clearance (single scope background investigation).
           \end{list2}
                 
     \section{\mysidestyle Publications \\ \& Proceedings}
@@ -147,14 +150,32 @@
         \item[] For service as Reactor Control Assistant during a six-month deployment and Operational Reactor Safeguards Exam
         \end{list2}             \vspace{-3mm}           
 
-    %__________________________________________________________________________________________________________________
+        
+        % __________________________________________________________________________________________________________________
+        \section{\mysidestyle Code Development}
+        \textbf{Bay Area Radiation Transport (BART)} \hfill
+        \url{https://github.com/SlaybaughLab/BART} \\
+        A finite-element-based transport solver that
+                  supports 1/2/3D and MPI, based on the \href{https://www.dealii.org/}{deal.II}
+                  finite element library.
+                \begin{list2}
+                \item Designed for developer end-users for maximum
+                  modification and support of methods analysis and
+                  implementation.
+                \item Designed to support reproducibility,
+                  portability, and testing in codes. utilizes
+                  continuous integration, code coverage, and Docker
+                  containers.
+                \item Uses a novel protocol-buffer format for materials.
+                \end{list2}
     % Computer Skills
     \section{\mysidestyle Scientific\\Computing\\Skills}
                 \textbf{Languages} \hfill  \Cpp{}, bash, python\vspace{.5mm}\\%
                 \textbf{Build Systems} \hfill make, CMake \vspace{.5mm}\\%
                 \textbf{Testing} \hfill GoogleTest, GoogleMock, continuous integration, code coverage\vspace{.5mm}\\%
                 \textbf{Version Control} \hfill git\vspace{.5mm}\\%
-                \textbf{Other} \hfill Doxygen, \LaTeX, MatLab, Protocol Buffers \vspace{.5mm}%
+                \textbf{Other} \hfill Doxygen, \LaTeX, MatLab,
+                Protocol Buffers, Jupyter, Docker \vspace{.5mm}%
 
     %__________________________________________________________________________________________________________________
     % References
